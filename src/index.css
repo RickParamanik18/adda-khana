@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* colors */
+:root {
+  --primary: #0099ff;
+  --carbon: #1d1d1d;
+  --granite: #a0a0a0;
+  --light: #f6f5fa;
+  --smoke: #f3f4f5;
+  --maya: #2f80ec;
+  --mint: #51d48e;
+  --blush: #eb5757;
+  --olive: #00cba9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* flex property */
+
+.d-f {
+  display: flex;
+}
+.f-d-c {
+  display: flex;
+  flex-direction: column;
+}
+.a-i-c {
+  display: flex;
+  align-items: center;
+}
+.a-i-e {
+  display: flex;
+  align-items: flex-end;
+}
+.j-c-c {
+  display: flex;
+  justify-content: center;
+}
+.j-c-s {
+  display: flex;
+  justify-content: start;
+}
+.j-c-e {
+  display: flex;
+  justify-content: end;
+}
+.j-c-s-b {
+  display: flex;
+  justify-content: space-between;
+}
+.f-a-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* margin & padding */
+
+/* cursors */
+.c-pointer {
+  cursor: pointer;
+}
+.c-none {
+  cursor: not-allowed;
+}
+
+/* scrollbar remover */
+* ::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ant styles */
+.ant-form-item {
+  margin: 0px!important;
+  width: 100%;
 }
