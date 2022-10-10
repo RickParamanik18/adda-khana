@@ -12,4 +12,10 @@ const setSearchResult = (result) => {
   };
 };
 
-export { setReceiver, setSearchResult };
+const setSocket = () => {
+  return {
+    type: "SET_SOCKET",
+  };
+};
+
+export { setReceiver, setSearchResult, setSocket };

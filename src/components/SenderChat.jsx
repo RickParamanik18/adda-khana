@@ -1,8 +1,12 @@
+import moment from "moment";
+
 const SenderChat = (props) => {
   return (
     <>
       <div className="j-c-s">
-        <div className="time f-d-c j-c-e">05:32</div>
+        <div className="time f-d-c j-c-e">
+          {moment(props.time).format("LT")}
+        </div>
         <div className="chat">{props.msg}</div>
       </div>
       <style jsx="true">{`

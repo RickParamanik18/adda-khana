@@ -21,7 +21,7 @@ const ChatBoard = () => {
       // @TODO fetch chat data
     }
   }, [receiverId]);
-  console.log({receiverId})
+  // console.log({receiverId})
   return (
     <>
       <div className="chat-board">
